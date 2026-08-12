@@ -109,7 +109,7 @@ def open_browser():
 
 
 if __name__ == "__main__":
-    print(f"\n🚀  NeuralQuery running at  http://localhost:{PORT}\n")
+    print(f"\n  NeuralQuery running at  http://localhost:{PORT}\n")
     threading.Thread(target=open_browser, daemon=True).start()
     with socketserver.TCPServer(("", PORT), Handler) as httpd:
         httpd.serve_forever()
